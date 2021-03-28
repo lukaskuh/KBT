@@ -16,7 +16,7 @@ chainLength = 200.0
 position = Vector2( 229.349, 130.661 )
 texture = ExtResource( 2 )
 script = ExtResource( 3 )
-acceleration = 1000.0
+acceleration = 2000.0
 maxVelocity = 400.0
 
 [node name="Ball" type="Sprite" parent="PlayerController"]

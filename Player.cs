@@ -22,27 +22,13 @@ public class Player : Node2D
 
   public override void _Process(float delta)
   {
-    Vector2 moveDir = new Vector2();
-  
-    if (Input.IsActionPressed("ui_left"))
-    {
-      moveDir.x = -1;
-    } 
-    if (Input.IsActionPressed("ui_right"))
-    {
-      moveDir.x = 1;
-        
-    }if (Input.IsActionPressed("ui_up"))
-    {
-      moveDir.y = -1;
-    }
-    if (Input.IsActionPressed("ui_down"))
-    {
-      moveDir.y = 1;
-    }
+    Vector2 direction = new Vector2
+    (
+      Convert.ToSingle(Input.IsActionPressed("ui_right")) - Convert.ToSingle(Input.IsActionPressed("ui_left")),
+      Convert.ToSingle(Input.IsActionPressed("ui_down")) - Convert.ToSingle(Input.IsActionPressed("ui_up"))
+    );
 
-    velocity = velocity.MoveToward(maxVelocity * moveDir.Normalized(), acceleration * delta); 
-
+    velocity = velocity.MoveToward(maxVelocity * direction.Normalized(), acceleration * delta); 
 
     Position += velocity * delta;
   }

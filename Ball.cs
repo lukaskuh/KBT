@@ -25,7 +25,8 @@ public class Ball : Sprite
     {
         if (Position.DistanceTo(player.Position) >= playerController.chainLength)
         {
-            velocity = player.velocity;//velocity.MoveToward(player.Position - Position, acceleration * delta);
+            //velocity = velocity.MoveToward(player.Position - Position, acceleration * delta);
+            
         }
         else 
         {
