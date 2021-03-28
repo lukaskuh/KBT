@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "l2KdiLLMGn5EiBV/1AHbkBvZq2PgZDopIiZ8BLuaQqjoXFfcp94l3M2Bpb4lGUyiU/LWgUys5pcQmdXbKm6erQ==",
+  "success": true,
+  "projectFilePath": "C:\\Godot\\KBT\\KBT\\Kbt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Luc\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\Luc\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.0\\microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

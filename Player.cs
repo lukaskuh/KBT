@@ -3,21 +3,21 @@ using System;
 
 public class Player : Node2D
 {
+
   [Export]
   public Vector2 velocity;
 
-  private bool isMoving;
   [Export]
   public float acceleration;
   [Export]
   public float maxVelocity;
-  [Export]
-  public float deacceleration;
+  private bool isMoving;
 
+  PlayerController playerController;
 
     public override void _Ready()
     {
-        
+        playerController = GetParent<PlayerController>();
     }
 
   public override void _Process(float delta)
@@ -41,20 +41,9 @@ public class Player : Node2D
       moveDir.y = 1;
     }
 
-    velocity.MoveToward(maxVelocity * moveDir.Normalized(), acceleration * delta); 
-
-    // isMoving = (Input.IsActionPressed("ui_left") || Input.IsActionPressed("ui_right") || Input.IsActionPressed("ui_up") ||Input.IsActionPressed("ui_down")); 
-    
-    // if (!isMoving) {
-    //   velocity.MoveToward(Vector2.Zero, deacceleration);
-    // }
-
-    GD.Print(velocity);
+    velocity = velocity.MoveToward(maxVelocity * moveDir.Normalized(), acceleration * delta); 
 
 
     Position += velocity * delta;
   }
-
-
-  
 }

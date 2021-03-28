@@ -1,21 +1,28 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://sprites/ball.png" type="Texture" id=1]
 [ext_resource path="res://sprites/player1.png" type="Texture" id=2]
 [ext_resource path="res://Player.cs" type="Script" id=3]
+[ext_resource path="res://PlayerController.cs" type="Script" id=4]
+[ext_resource path="res://Ball.cs" type="Script" id=5]
 
 [node name="World" type="Node2D"]
 
-[node name="Player" type="Node2D" parent="."]
+[node name="PlayerController" type="Node2D" parent="."]
+script = ExtResource( 4 )
+chainLength = 200.0
 
-[node name="main" type="Sprite" parent="Player"]
+[node name="Player" type="Sprite" parent="PlayerController"]
 position = Vector2( 229.349, 130.661 )
 texture = ExtResource( 2 )
 script = ExtResource( 3 )
 acceleration = 1000.0
-maxVelocity = 10000.0
-deacceleration = 1000.0
+maxVelocity = 400.0
 
-[node name="ball" type="Sprite" parent="Player"]
-position = Vector2( 177.979, 145.752 )
+[node name="Ball" type="Sprite" parent="PlayerController"]
+position = Vector2( 200.454, 137.511 )
 texture = ExtResource( 1 )
+script = ExtResource( 5 )
+acceleration = 5000.0
+deacceleration = 100.0
+maxVelocity = 400.0

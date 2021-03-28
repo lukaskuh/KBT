@@ -5,3 +5,11 @@ C:\Users\lukas\Documents\KBT\.mono\temp\obj\Debug\Kbt.AssemblyInfoInputs.cache
 C:\Users\lukas\Documents\KBT\.mono\temp\obj\Debug\Kbt.AssemblyInfo.cs
 C:\Users\lukas\Documents\KBT\.mono\temp\obj\Debug\Kbt.dll
 C:\Users\lukas\Documents\KBT\.mono\temp\obj\Debug\Kbt.pdb
+C:\Godot\KBT\KBT\.mono\temp\bin\Debug\Kbt.dll
+C:\Godot\KBT\KBT\.mono\temp\bin\Debug\Kbt.pdb
+C:\Godot\KBT\KBT\.mono\temp\obj\Debug\Kbt.csprojAssemblyReference.cache
+C:\Godot\KBT\KBT\.mono\temp\obj\Debug\Kbt.AssemblyInfoInputs.cache
+C:\Godot\KBT\KBT\.mono\temp\obj\Debug\Kbt.AssemblyInfo.cs
+C:\Godot\KBT\KBT\.mono\temp\obj\Debug\Kbt.csproj.CoreCompileInputs.cache
+C:\Godot\KBT\KBT\.mono\temp\obj\Debug\Kbt.dll
+C:\Godot\KBT\KBT\.mono\temp\obj\Debug\Kbt.pdb
